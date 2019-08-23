@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Uncial+Antiqua&display=swap");
+
+body {
+  font-size: 16px;
+  background: no-repeat center url(./warrior.jpg);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.title-font {
+  font-family: Uncial Antiqua;
+}
+
+.sub-font {
+  font-family: Major Mono Display;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#root {
+  width: 61.8%;
+  background-color: rgb(0, 0, 0, 0.3);
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 5rem;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 1.5rem 0 0;
+}
+
+.desc {
+  font-size: 1.5rem;
+}
+
+.link {
+  padding: 0.3rem 1rem;
+  transition: background 0.3s ease-out;
+  cursor: pointer;
+  background-color: white;
+  color: #111;
+  border: 2px solid transparent;
+  text-decoration: none;
+}
+
+.link:hover {
+  border: 2px solid white;
+  background-color: inherit;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comingsoo {
+    position: relative;
+    right: -1em;
+  }
+
+  .link {
+    margin-top: 1rem;
+  }
+}
